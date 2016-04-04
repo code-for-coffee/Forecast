@@ -4,6 +4,7 @@
 /ant.properties
 /local.properties
 /project.properties
+/gradle.properties
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
