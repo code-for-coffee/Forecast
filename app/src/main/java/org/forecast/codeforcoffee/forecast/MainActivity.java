@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FrameLayout frame = new FrameLayout(this);
-        frame.setId(R.id.primary_framelayout);
+        frame.setId(R.id.primary_linearlayout);
         setContentView(frame, new ActionBar.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState == null) {
             forecastFragment = new ForecastFragement();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
-            transaction.add(R.id.primary_framelayout, forecastFragment).commit();
+            transaction.add(R.id.primary_linearlayout, forecastFragment).commit();
         }
 
     }
